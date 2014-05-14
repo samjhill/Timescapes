@@ -142,7 +142,7 @@ $valid_url_regex = '/.*/';
 
 // ############################################################################
 
-$url = $_GET['http://www.reddit.com/r/LivingBackgrounds/?sort=top&t=all/.rss'];
+$url = $_GET['url'];
 
 if ( !$url ) {
   
