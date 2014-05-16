@@ -1,0 +1,149 @@
+body{
+    background-color: black;
+    padding: 1em;
+    color: white;
+    font-family: Arial;
+}
+
+a{
+    color: rgb(243, 242, 242);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+h1{
+    font-size: 58pt;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+li{
+    list-style-type: none;
+    font-size: 30pt;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+div#preload { display: none; }
+
+
+/* begin classes section */
+.active{
+    font-size: 48pt;
+}
+
+.hidden{
+    visibility: hidden;
+}
+/* end classes section */
+
+/* begin IDs section */
+#nav li{
+    
+}
+
+#nav-phone i{
+    font-size: 46pt;
+    margin-bottom: .5em;
+}
+
+#infoText{
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-right: 5em;
+    width: 60%;
+    height: auto;
+    padding: 1.2em;
+    float: right;
+}
+
+#infoText li{
+    font-size: 14pt;
+}
+
+#intro-text{
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+#text-display{
+	position: absolute;
+	color: #333333;
+	font-size: 30pt;
+	margin-top: -4em;
+	margin-left: 12em;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* begin button section */
+.imageNav{
+   display: inline;
+}
+
+.imageNav p{
+    font-size: 200pt;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+.imageNav p:hover{
+    cursor: pointer;
+    text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+#imageNav{
+    margin-top: -2em;
+   display: inline;
+}
+
+#imageNav p{
+    font-size: 115pt;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+#imageNav p:hover{
+    cursor: pointer;
+    text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* end button section */
+
+/* begin footer section */
+.flavor-text{
+    display: inline;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(141, 240, 161);
+}
+
+#footer{
+    font-size: 18pt;
+}
+
+.footer-text{
+    margin-top:-1em;
+    padding: 1em;
+    background: rgba(0,0,0,0.3);
+    text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+#footer p{
+    display: inline;
+}
+
+#weather{
+    margin-bottom: 2em;
+    float:right;
+    font-size: 32pt;
+    text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.4);
+}
+#condition{
+    font-size: 20pt;
+}
+/* end footer section */
+/* end IDs section */
+.nav>li>a:hover, .nav>li>a:focus {
+text-decoration: none;
+background-color: rgba(238, 238, 238, 0.11);
+}
