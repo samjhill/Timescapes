@@ -32,6 +32,7 @@
 <body>
 
     
+    <?php include ('assets/php/nav.php'); ?>
     
     <?php include ('assets/php/imageNav.php'); ?>
     
