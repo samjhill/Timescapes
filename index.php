@@ -33,9 +33,9 @@
 
     
     
-    
+    <?php include ('assets/php/weather.php');
     <?php include ('assets/php/imageNav.php'); ?>
-    <i class="fa fa-expand" onclick="ToggleFullScreen();"></i>
+    <!--<i class="fa fa-expand" onclick="ToggleFullScreen();"></i>-->
     <?php include ('assets/php/scripts.php'); ?>
     
     

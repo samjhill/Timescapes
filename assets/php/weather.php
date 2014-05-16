@@ -1,5 +1,6 @@
 <?php
-     
+    error_reporting(E_ALL);
+    ini_set('display_errors', True);
     //Get the user's IP address
     $user_ip = $_SERVER['REMOTE_ADDR'];
     //The Data Science Toolkit URL
@@ -30,7 +31,7 @@
     $temperature = format_result(get_match('/<yweather:wind chill="(.*)"/isU',$data));
     
     /* debug to see what we got back */
-    echo '<pre style="background:#fff;font-size:12px;">['; print_r($data); echo ']</pre>';
+    //echo '<pre style="background:#fff;font-size:12px;">['; print_r($data); echo ']</pre>';
     
     function get_data($url)
     {
