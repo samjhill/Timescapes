@@ -30,7 +30,6 @@
 </head>
 
 <body>
-    <h1>Loading...</h1>
     
     <?php include ('assets/php/imageNav.php'); ?>
     
