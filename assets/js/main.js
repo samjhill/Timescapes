@@ -52,21 +52,7 @@ function getComments() {
 }
 
 function ToggleFullScreen () {
-                             // UniversalXPConnect privilege is required in Firefox
-                                     try {
-                                            if (window.netscape && netscape.security) { // Firefox
-                                            netscape.security.PrivilegeManager.enablePrivilege ("UniversalXPConnect");
-                                      }
-                                 }
-                            catch (e) {
-                                alert ("UniversalXPConnect privilege is required for this operation!");
-                                return;
-                             }
-
-                             if ('fullScreen' in window) {
-                             window.fullScreen = !window.fullScreen;
-                              }
-                             else {
-                              alert ("Your browser does not support this example!");
-                                }
-                              }
+   document.body.requestFullScreen();
+   document.body.webkitRequestFullScreen();
+   document.body.mozFullScreen();
+}
