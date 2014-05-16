@@ -13,7 +13,7 @@
       $zip_code = $raw_geocode->$user_ip->postal_code;
       //printf('<p>Your zip code is: %s</p>', $raw_geocode->$user_ip->postal_code);
     } else {
-      //If the user isn't in the US, set a sip code that will work.
+      //If the user isn't in the US, set a zip code that will work.
       $zip_code = '14623';
     }
     if($zip_code == null){
@@ -30,7 +30,7 @@
     $temperature = format_result(get_match('/<yweather:wind chill="(.*)"/isU',$data));
     
     /* debug to see what we got back */
-    //echo '<pre style="background:#fff;font-size:12px;">['; print_r($data); echo ']</pre>';
+    echo '<pre style="background:#fff;font-size:12px;">['; print_r($data); echo ']</pre>';
     
     function get_data($url)
     {
@@ -66,28 +66,5 @@
 	<div id="temperature">' . $temperature . ' &deg;</div>
     </div>
     
-    <ul id="nav" class="visible-md visible-lg">
-        <li id="nav-home"><a href="index.php"><i class="fa fa-home"></i> home</a></li>
-        <li id="nav-waterfalls"><a href="waterfall.php"><i class="fa fa-anchor"></i> waterfalls</a></li>
-        <li id="nav-trees"><a href="tree.php"><i class="fa fa-leaf"></i> trees</a></li>
-	<li id="nav-paths"><a href="paths.php"><i class="fa fa-road"></i> paths</a></li>
-	<li id="nav-urban"><a href="urban.php"><i class="fa fa-building-o"></i> urban</a></li>
-        <li id="nav-tips"><a href="tips.php"><i class="fa fa-pencil-square-o"></i> tips</a></li>
-	<li id="nav-comments"><a href="comments.php"><i class="fa fa-comments"></i> comments</a></li>
-        <li id="nav-about"><a href="about.php"><i class="fa fa-info-circle"></i> about</a></li>
-    </ul>
-    
-    
-    
-    
-    <ul id="nav-phone" class="visible-xs visible-sm nav nav-pills">
-        <li id="nav-home"><a href="index.php"><i class="fa fa-home"></i></a></li>
-        <li id="nav-waterfalls"><a href="waterfall.php"><i class="fa fa-anchor"></i></a></li>
-        <li id="nav-trees"><a href="tree.php"><i class="fa fa-leaf"></i></a></li>
-	<li id="nav-paths"><a href="paths.php"><i class="fa fa-road"></i></a></li>
-	<li id="nav-urban"><a href="urban.php"><i class="fa fa-building-o"></i></a></li>
-        <li id="nav-tips"><a href="tips.php"><i class="fa fa-pencil-square-o"></i></a></li>
-	<li id="nav-comments"><a href="comments.php"><i class="fa fa-comments"></i></a></li>
-        <li id="nav-about"><a href="about.php"><i class="fa fa-info-circle"></i></a></li>
-    </ul>';
+    ';
 ?>
