@@ -1,6 +1,4 @@
 <?php
-    error_reporting(E_ALL);
-    ini_set('display_errors', True);
     //Get the user's IP address
     $user_ip = $_SERVER['REMOTE_ADDR'];
     //The Data Science Toolkit URL
@@ -62,7 +60,6 @@
     echo '
     
     <div id="weather" class="pull-right">
-	<div id="location">' . $location . '</div>
 	<div id="condition">' . $weather_condition . '</div>
 	<div id="temperature">' . $temperature . ' &deg;</div>
     </div>
